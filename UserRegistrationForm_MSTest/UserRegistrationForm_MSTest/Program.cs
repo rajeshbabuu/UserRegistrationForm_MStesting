@@ -24,6 +24,10 @@ namespace UserRegistrationForm_MSTest
             Console.Write("Enter the Mobile Number : ");
             string mobileNumber = Console.ReadLine();
             UserRegistrationForm.UserFormLastName(mobileNumber);
+
+            Console.Write("Enter the Mobile Number : ");
+            string userPassWord = Console.ReadLine();
+            UserRegistrationForm.UserFormLastName(userPassWord);
         }
     }
 }

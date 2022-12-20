@@ -42,5 +42,13 @@ namespace UserRegistrationForm_MSTest.UserRegistrationForm_MSTesting
             bool mobileNumber = name.IsMatch(mobileNum);
             return mobileNumber;
         }
+        public static bool PassWordRule1(string password)
+        {
+            string passwordRule1 = @"^[a-z A-Z]{8,}";
+
+            Regex name = new Regex(passwordRule1);
+            bool formPassword = name.IsMatch(password);
+            return formPassword;
+        }
     }
 }

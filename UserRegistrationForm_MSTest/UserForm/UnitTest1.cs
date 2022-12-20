@@ -33,6 +33,13 @@ namespace UserForm
             bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.MobileNumber("8865851436");
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void PassWordRule_1()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.PassWordRule1("rajeshkumar");
+            Assert.IsTrue(result);
+        }
     }
 }
 
