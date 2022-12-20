@@ -13,5 +13,13 @@ namespace UserForm
             bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.userForm("Rajesh");
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void LastName()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UserFormLastName("Kumar");
+            Assert.IsTrue(result);
+        }
     }
 }
+

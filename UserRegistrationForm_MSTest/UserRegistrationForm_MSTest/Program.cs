@@ -11,6 +11,10 @@ namespace UserRegistrationForm_MSTest
             Console.Write("Enter first name : ");
             string fName = Console.ReadLine();
             UserRegistrationForm.userForm(fName);
+
+            Console.Write("Enter last name : ");
+            string lName = Console.ReadLine();
+            UserRegistrationForm.UserFormLastName(lName);
         }
     }
 }
