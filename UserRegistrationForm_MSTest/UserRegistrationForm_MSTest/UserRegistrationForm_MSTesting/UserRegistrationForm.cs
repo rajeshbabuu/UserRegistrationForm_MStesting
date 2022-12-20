@@ -60,5 +60,14 @@ namespace UserRegistrationForm_MSTest.UserRegistrationForm_MSTesting
             bool password = name.IsMatch(password_2);
             return password;
         }
+
+        public static bool Atleast1NumberPassWordRule_3(string password_3)
+        {
+            string passwordRule3 = @"^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
+
+            Regex name = new Regex(passwordRule3);
+            bool password = name.IsMatch(password_3);
+            return password;
+        }
     }
 }

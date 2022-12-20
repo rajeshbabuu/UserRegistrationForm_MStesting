@@ -32,6 +32,10 @@ namespace UserRegistrationForm_MSTest
             Console.Write("Enter the password atleast 1 uppercase char : ");
             string uppercasePassWord = Console.ReadLine();
             UserRegistrationForm.UserFormLastName(uppercasePassWord);
+
+            Console.Write("Enter the password atleast 1 Number : ");
+            string atleast1PassWord = Console.ReadLine();
+            UserRegistrationForm.UserFormLastName(atleast1PassWord);
         }
     }
 }

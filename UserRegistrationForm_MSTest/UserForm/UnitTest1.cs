@@ -47,6 +47,14 @@ namespace UserForm
             bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UpperCasePassWordRule_2("RajeshKumar");
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void Atleast1NumberPassWordRule_3()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.Atleast1NumberPassWordRule_3("Sameersingh1");
+            Assert.IsTrue(result);
+        }
     }
 }
 
