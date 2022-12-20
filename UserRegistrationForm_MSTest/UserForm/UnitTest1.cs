@@ -63,6 +63,70 @@ namespace UserForm
             bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.Atleast1SpecialCharPassWordRule_4("RajeshKumar@1");
             Assert.IsTrue(result);
         }
+
+        [TestMethod]
+        public void EmailSample()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc@yahoo.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample2()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc-100@yahoo.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample3()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc.100@yahoo.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample4()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc111@abc.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample5()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc-100@abc.net");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample6()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc.100@abc.com.au");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample7()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc@1.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample8()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc@gmail.com.com");
+            Assert.IsTrue(result);
+        }
+        [TestMethod]
+        public void EmailSample9()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.EmailSample("abc+100@gmail.com");
+            Assert.IsTrue(result);
+        }
     }
 }
 

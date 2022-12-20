@@ -79,5 +79,14 @@ namespace UserRegistrationForm_MSTest.UserRegistrationForm_MSTesting
             bool password = name.IsMatch(password_4);
             return password;
         }
+
+        public static bool EmailSample(string email)
+        {
+            string valideEmailSample = @"^(abc)([_\+\-\.]{0,1}[a-zA-Z0-9])*[@][a-z0-9]{1,} *[.][a-z]{2,}[\.\,]{0,}[a-z]{0,}$";
+
+            Regex name = new Regex(valideEmailSample);
+            bool emailSample = name.IsMatch(email);
+            return emailSample;
+        }
     }
 }
