@@ -34,5 +34,13 @@ namespace UserRegistrationForm_MSTest.UserRegistrationForm_MSTesting
             bool valideEmail = name.IsMatch(emailName);
             return valideEmail;
         }
+        public static bool MobileNumber(string mobileNum)
+        {
+            string userMobile = @"[6-9][0-9]{9}";
+
+            Regex name = new Regex(userMobile);
+            bool mobileNumber = name.IsMatch(mobileNum);
+            return mobileNumber;
+        }
     }
 }

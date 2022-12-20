@@ -19,6 +19,11 @@ namespace UserRegistrationForm_MSTest
             Console.Write("Enter the email address : ");
             string emailAddress = Console.ReadLine();
             UserRegistrationForm.UserFormLastName(emailAddress);
+
+
+            Console.Write("Enter the Mobile Number : ");
+            string mobileNumber = Console.ReadLine();
+            UserRegistrationForm.UserFormLastName(mobileNumber);
         }
     }
 }

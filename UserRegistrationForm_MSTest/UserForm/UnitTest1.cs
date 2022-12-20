@@ -26,6 +26,13 @@ namespace UserForm
             bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UserValideEmail("abc.xyz@bl.co.in");
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void MobileNumber()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.MobileNumber("8865851436");
+            Assert.IsTrue(result);
+        }
     }
 }
 
