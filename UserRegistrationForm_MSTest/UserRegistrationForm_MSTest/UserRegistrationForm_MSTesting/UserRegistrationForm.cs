@@ -50,5 +50,15 @@ namespace UserRegistrationForm_MSTest.UserRegistrationForm_MSTesting
             bool formPassword = name.IsMatch(password);
             return formPassword;
         }
+
+
+        public static bool UpperCasePassWordRule_2(string password_2)
+        {
+            string passwordRule2 = @"^(?=.*[a-z])(?=.*[A-Z]).{8,}$";
+
+            Regex name = new Regex(passwordRule2);
+            bool password = name.IsMatch(password_2);
+            return password;
+        }
     }
 }
