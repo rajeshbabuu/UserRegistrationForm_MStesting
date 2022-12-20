@@ -9,9 +9,8 @@ namespace UserRegistrationForm_MSTest.UserRegistrationForm_MSTesting
 {
     public class UserRegistrationForm
     {
-        public static bool userForm(string fName)
+        public static bool UserForm(string fName)
         {
-
             string userFirstName = @"^[A-Z]{1}[a-z A-Z]{2,10}";
 
             Regex name = new Regex(userFirstName);
@@ -26,6 +25,14 @@ namespace UserRegistrationForm_MSTest.UserRegistrationForm_MSTesting
             Regex name = new Regex(lastName);
             bool LastName = name.IsMatch(lName);
             return LastName;
+        }
+        public static bool UserValideEmail(string emailName)
+        {
+            string userEmail = @"^[a][b][c]+([.][a-z A-Z 0-9]+)*@[bl]+.[co]{2,10}([.][a-z A-Z]{1,5})?$";
+
+            Regex name = new Regex(userEmail);
+            bool valideEmail = name.IsMatch(emailName);
+            return valideEmail;
         }
     }
 }

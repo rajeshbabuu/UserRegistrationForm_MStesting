@@ -20,6 +20,12 @@ namespace UserForm
             bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UserFormLastName("Kumar");
             Assert.IsTrue(result);
         }
+        [TestMethod]
+        public void ValideEmail(object UserRegistrationForm_MSTesting)
+        {
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.UserValideEmail("abc.xyz@bl.co.in");
+            Assert.IsTrue(result);
+        }
     }
 }
 
