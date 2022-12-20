@@ -36,6 +36,10 @@ namespace UserRegistrationForm_MSTest
             Console.Write("Enter the password atleast 1 Number : ");
             string atleast1PassWord = Console.ReadLine();
             UserRegistrationForm.UserFormLastName(atleast1PassWord);
+
+            Console.Write("Enter the password atleast 1 special char : ");
+            string min1SpecialCharPassWord = Console.ReadLine();
+            UserRegistrationForm.UserFormLastName(min1SpecialCharPassWord);
         }
     }
 }

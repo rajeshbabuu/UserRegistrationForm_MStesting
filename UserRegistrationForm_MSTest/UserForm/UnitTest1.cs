@@ -52,7 +52,15 @@ namespace UserForm
         public void Atleast1NumberPassWordRule_3()
         {
             object UserRegistrationForm_MSTesting = null;
-            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.Atleast1NumberPassWordRule_3("Sameersingh1");
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.Atleast1NumberPassWordRule_3("RajeshKumar1");
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void Atleast1SpecialCharPassWordRule_4()
+        {
+            object UserRegistrationForm_MSTesting = null;
+            bool result = UserRegistrationForm_MSTesting.UserRegistrationForm.Atleast1SpecialCharPassWordRule_4("RajeshKumar@1");
             Assert.IsTrue(result);
         }
     }
